@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            height: 100px;
+            width: 50%;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table border="1">
+    <h1>Chuyển Đổi Tiền Tệ</h1>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text" id="money"></td>
+        <td>
+            <select name="" id="Fcur">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+            </select>
+        </td>
+        <td>
+            <select name="" id="Tcur">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="chuyen_doi_tien_te()">Convert</button>
+        </td>
+    </tr>
+
+</table>
+<h3 id="result"></h3>
+<script src="my.js"></script>
+</body>
+</html>
